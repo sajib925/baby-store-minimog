@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import { StyledHeaderMiddle } from './styles';
 import { Wrapper } from './../../wrapper/wrapper';
 import { FaBars } from 'react-icons/fa'
@@ -17,6 +17,7 @@ import { FaShippingFast } from 'react-icons/fa'
 import { RiCouponLine } from 'react-icons/ri'
 import { AiOutlineEyeInvisible } from 'react-icons/ai'
 import { AiOutlineEye } from 'react-icons/ai'
+import { useEffect } from 'react';
 const HeaderMiddle = () => {
     const [mobileMenu, setMobileMenu] = useState (false);
     const handleClick = () => {
@@ -46,7 +47,37 @@ const HeaderMiddle = () => {
     const forgatPassClick = () =>{
         setForgatPass (forgatPass => !forgatPass)
     }
-
+    useEffect(() => {
+      if (mobileMenu === true) {
+        document.body.style.overflow = "hidden";
+        document.body.style.marginRight = "17px";
+      } else if (shoppingCart === true) {
+        document.body.style.overflow = "hidden";
+        document.body.style.marginRight = "17px";
+      } else if (searchBar === true) {
+        document.body.style.overflow = "hidden";
+        document.body.style.marginRight = "17px";
+      } else if (loginForm === true) {
+        document.body.style.overflow = "hidden";
+        document.body.style.marginRight = "17px";
+      } else if (signUpForm === true) {
+        document.body.style.overflow = "hidden";
+        document.body.style.marginRight = "17px";
+      } else if (forgatPass === true) {
+        document.body.style.overflow = "hidden";
+        document.body.style.marginRight = "17px";
+      } else {
+        document.body.style.overflow = "auto";
+        document.body.style.marginRight = "0";
+      }
+    }, [
+      mobileMenu,
+      shoppingCart,
+      searchBar,
+      loginForm,
+      signUpForm,
+      forgatPass,
+    ]);
   return (
     <StyledHeaderMiddle>
         <Wrapper>

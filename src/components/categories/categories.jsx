@@ -16,3 +16,4 @@ export const Card = ({image,title,number}) => {
     
   )
 }
+
