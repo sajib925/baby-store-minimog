@@ -17,7 +17,6 @@ import { FaShippingFast } from 'react-icons/fa'
 import { RiCouponLine } from 'react-icons/ri'
 import { AiOutlineEyeInvisible } from 'react-icons/ai'
 import { AiOutlineEye } from 'react-icons/ai'
-import { useEffect } from 'react';
 const HeaderMiddle = () => {
     const [mobileMenu, setMobileMenu] = useState (false);
     const handleClick = () => {
