@@ -143,7 +143,7 @@ const HeaderMiddle = () => {
 
         {/* popup cart start here  */}
         <div className={shoppingCart ? "openCartPopup cartPopup" : "closeCartPopup cartPopup"}>
-            <div className="inner">
+            <div className="cartInner">
                 <Link to="/" className='closeIcon' onClick={shoppingCartClick}>
                     <AiOutlineClose />
                 </Link>

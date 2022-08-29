@@ -224,11 +224,11 @@ export const StyledHeaderMiddle = styled.header`
   .closeCartPopup {
     visibility: hidden;
     opacity: 0;
-    .inner {
+    .cartInner {
       transform: translateX(100%);
     }
   }
-  .inner {
+  .cartInner {
     position: relative;
     height: 100%;
     max-width: 90%;
@@ -239,6 +239,7 @@ export const StyledHeaderMiddle = styled.header`
     width: 450px;
     background: #fff;
     box-shadow: 0 0 10px rgb(0 0 0 / 5%);
+    overflow: scroll;
     .closeIcon {
       position: absolute;
       top: 5px;
@@ -247,6 +248,8 @@ export const StyledHeaderMiddle = styled.header`
       line-height: 1;
       height: 40px;
       width: 40px;
+      display: flex;
+      align-items: center;
       justify-content: center;
       z-index: 1;
     }
@@ -254,14 +257,24 @@ export const StyledHeaderMiddle = styled.header`
   .cartPopupContent {
     .cartHeader {
       padding: 26px 24px 28px 24px;
+      ${media.down("sm")} {
+        padding: 24px 12px;
+      }
       .h3 {
         font-size: 24px;
         font-weight: 500;
+        ${media.down("sm")} {
+          text-align: center;
+        }
       }
       .countDownMessage {
         margin-top: 8px;
         color: #000;
         font-size: 16px;
+
+        ${media.down("sm")} {
+          text-align: center;
+        }
         .timer {
           display: inline-block;
           font-weight: 500;
@@ -269,6 +282,9 @@ export const StyledHeaderMiddle = styled.header`
       }
       .cartGoalText {
         margin: 10px 0;
+        ${media.down("sm")} {
+          text-align: center;
+        }
       }
       .progressBar {
         position: relative;
@@ -329,12 +345,18 @@ export const StyledHeaderMiddle = styled.header`
           font-size: 18px;
           line-height: 24px;
           margin-bottom: 10px;
+          ${media.down("sm")} {
+            text-align: center;
+          }
         }
         .description {
           width: 100%;
           text-align: center;
           color: #666666;
           font-size: 16px;
+          ${media.down("sm")} {
+            text-align: center;
+          }
         }
       }
       .cartBTN {
@@ -364,6 +386,9 @@ export const StyledHeaderMiddle = styled.header`
       padding: 10px 24px 30px;
       background: #f7f7f7;
       box-shadow: 0 0 10px 0 hsl(0deg 0% 51% / 20%);
+      ${media.down("sm")} {
+        padding: 10px 10px 30px;
+      }
 
       .footerActions {
         display: flex;
