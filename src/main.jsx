@@ -8,11 +8,12 @@ import Shop from './pages/shop';
 import Product from './pages/product';
 import Blog from './pages/blog';
 import Pages from './pages/pages';
+import ProductsDetails from './pages/productsDetails';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <>
     <GlobalStyle />
-  
+
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
@@ -21,9 +22,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="product" element={<Product />} />
           <Route path="blog" element={<Blog />} />
           <Route path="pages" element={<Pages />} />
+          <Route path="productsDetails" element={<ProductsDetails />} />
         </Route>
       </Routes>
     </BrowserRouter>
-
   </>
-)
+);

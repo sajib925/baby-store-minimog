@@ -4,13 +4,13 @@ import { Slider }  from '../components/cardSlider/slider';
 import { Cta } from '../components/cta/cta';
 import { OurProduct } from '../components/ourProduct/ourProduct';
 import { Wrapper } from '../components/wrapper/wrapper';
-import { Hero } from '../hero/hero';
 import { StyledHome } from './homeStyles';
 import { CategoriesSlider } from '../components/categories/categoriesSlider';
 import { RecommendationSlider } from '../components/recommendationCard/recommendationSlider';
 import { PricingData } from './../components/pricingCard/pricingData';
 import { PricingCard } from './../components/pricingCard/pricingCard';
 import { OfferExpired } from '../components/priceOfferDate/OfferExpired';
+import { Hero } from '../Sections/Home/hero/hero';
 
 
 const Home = () => {

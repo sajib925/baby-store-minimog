@@ -308,15 +308,15 @@ const HeaderMiddle = () => {
                     <div className="loginContentBody">
                         <form action="/">
                             <div className="formGroup">
-                                <label for="ip_user_login" className="formLabel">Username or email</label>
+                                <label className="formLabel">Username or email</label>
                                 <input type="text" className="loginInput" placeholder="Your username or email"></input>
-                                <label className='error' for="ip_password">This field is required</label>
+                                <label className='error'>This field is required</label>
                             </div>
                             <div className="formGroup">
-                                <label for="ip_password" class="formLabel">Password</label>
+                                <label className="formLabel">Password</label>
                                 <div className="inputGroup pass">
                                     <input type={type ? "text" : "password"} class="loginInput" placeholder="Password"></input>
-                                    <label className='error' for="ip_password">This field is required</label>
+                                    <label className='error'>This field is required</label>
                                     <div className='PassChange' onClick={handlePass}>
                                         {type ? <AiOutlineEyeInvisible /> :<AiOutlineEye />}
                                     </div>
@@ -362,32 +362,32 @@ const HeaderMiddle = () => {
                     <div className="signUpBody">
                         <form action="/">
                             <div className="formGroup">
-                                <label for="ip_user_login" className="signUpLabel">Your Name</label>
+                                <label className="signUpLabel">Your Name</label>
                                 <input type="text" className="signUpInput" placeholder="Your Name"></input>
                                 <label className='error' for="ip_password">This field is required</label>
                             </div>
                             <div className="formGroup">
-                                <label for="ip_user_login" className="signUpLabel">Username</label>
+                                <label className="signUpLabel">Username</label>
                                 <input type="text" className="signUpInput" placeholder="Username"></input>
-                                <label className='error' for="ip_password">This field is required</label>
+                                <label className='error'>This field is required</label>
                             </div>
                             <div className="formGroup">
-                                <label for="ip_user_login" className="signUpLabel">Email</label>
+                                <label className="signUpLabel">Email</label>
                                 <input type="email" className="signUpInput" placeholder="Your Email"></input>
-                                <label className='error' for="ip_password">This field is required</label>
+                                <label className='error' >This field is required</label>
                             </div>
                             <div className="formGroup pass">
-                                <label for="ip_password" class="signUpLabel">Password</label>
+                                <label className="signUpLabel">Password</label>
                                 <div className="inputGroup pass">
                                     <input type={type ? "text" : "password"} class="signUpInput" placeholder="Password"></input>
-                                    <label className='error' for="ip_password">This field is required</label>
+                                    <label className='error'>This field is required</label>
                                     <div className='PassChange' onClick={handlePass}>
                                         {type ? <AiOutlineEyeInvisible /> :<AiOutlineEye />}
                                     </div>
                                 </div>
                             </div>
                             <div className="formGroup check">
-                                <label class="checkLabel">
+                                <label className="checkLabel">
 								<input type="checkbox" />
                                 Yes, I agree with <Link to="/">Privacy Policy</Link> and Terms of U signUp </label>
                             </div>
@@ -421,9 +421,9 @@ const HeaderMiddle = () => {
                 </div>
                 <div className="forgetPassBody">
                     <div className="formGroup">
-                        <label for="ip_user_login" className="forgetPassLabel">Username or email</label>
+                        <label className="forgetPassLabel">Username or email</label>
                         <input type="text" className="forgetPassInput" placeholder="Your username or email"></input>
-                        <label className='error' for="ip_password">This field is required</label>
+                        <label className='error' >This field is required</label>
                     </div>
                     <div className="btn">
                         <button type="submit" className="forgetPassSubmit"><span>Log In</span></button>

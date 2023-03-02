@@ -11,7 +11,7 @@ export const PricingCard = ({mainImg, hoverImg, category, title, price}) => {
         <div className="card">
                 <div className="pricingCardThumbnail">
                     <div className="thumbnail">
-                        <Link to="/">
+                        <Link to="/productsDetails">
                             <div className="mainImage">
                                 <img src={mainImg} alt="pricing image" />
                             </div>

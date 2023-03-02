@@ -5,11 +5,11 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import img1 from '../../../public/image/heroSlider/h_baby_slide_01.jpg';
-import img2 from '../../../public/image/heroSlider/h_baby_slide_02.jpg';
-import img3 from '../../../public/image/heroSlider/h_baby_slide_03.jpg'
+import img1 from '../../../../public/image/heroSlider/h_baby_slide_01.jpg';
+import img2 from '../../../../public/image/heroSlider/h_baby_slide_02.jpg';
+import img3 from '../../../../public/image/heroSlider/h_baby_slide_03.jpg'
 import { StyledSlider } from './style';
-import { Wrapper } from './../wrapper/wrapper';
+import { Wrapper } from '../../../components/wrapper/wrapper';
 
 export const HeroSlider = () => {
     return (
