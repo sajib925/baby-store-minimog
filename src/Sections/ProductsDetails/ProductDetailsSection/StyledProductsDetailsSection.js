@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {media} from "../../../styles/responsive";
 
 const StyledProductsDetailsSection = styled.section`
   .inner__section {
@@ -7,10 +8,16 @@ const StyledProductsDetailsSection = styled.section`
     &__left {
       width: 50%;
       padding: 0 15px;
+      ${media.down("xl")} {
+        width: 100%;
+      }
     }
     &__right {
       width: 50%;
       padding: 0 15px;
+      ${media.down("xl")} {
+        width: 100%;
+      }
       &__wrapper {
         margin-left: 40px;
         max-width: 530px;
@@ -28,9 +35,15 @@ const StyledProductsDetailsSection = styled.section`
       &__wishlist {
         position: relative;
         display: inline-block;
+        cursor: pointer;
         &:hover {
           .title__wrapper__link {
             display: block;
+          }
+          .title__wrapper__icon {
+            border: 1px solid #000;
+            background-color: #000;
+            color: #fff;
           }
         }
       }
@@ -38,8 +51,9 @@ const StyledProductsDetailsSection = styled.section`
         width: 45px;
         height: 45px;
         border-radius: 50%;
-        background-color: #000;
-        color: #fff;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        color: #000;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -59,6 +73,7 @@ const StyledProductsDetailsSection = styled.section`
         background-color: #000;
         color: #fff;
         display: none;
+        transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
       }
     }
 
@@ -99,6 +114,7 @@ const StyledProductsDetailsSection = styled.section`
         }
       }
     }
+
     .view__wrap {
       margin-top: 28px;
       display: flex;
@@ -111,6 +127,7 @@ const StyledProductsDetailsSection = styled.section`
         font-weight: 600;
       }
     }
+
     .entry__product {
       margin-top: 22px;
       display: flex;
@@ -212,10 +229,11 @@ const StyledProductsDetailsSection = styled.section`
         font-weight: 500;
         transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
         &:hover {
-          box-shadow: 0 0 0 0.2rem;
+          box-shadow: 0 0 0 0.2rem #000;
         }
       }
     }
+
     .product__popup {
       display: flex;
       align-items: center;
@@ -263,6 +281,7 @@ const StyledProductsDetailsSection = styled.section`
         }
       }
     }
+
     .meta__shipping {
       margin-top: 23px;
       &__delivery {
@@ -275,6 +294,10 @@ const StyledProductsDetailsSection = styled.section`
         margin-top: 4px;
       }
       .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(112, 112, 112);
       }
       .label {
         font-weight: 500;
@@ -286,6 +309,20 @@ const StyledProductsDetailsSection = styled.section`
         font-weight: 400;
         color: #000;
         font-size: 16px;
+      }
+    }
+
+    .product__trust__badge {
+      margin: 27px 0 0;
+      background-color: #f7f7f7;
+      border-radius: 5px;
+      padding: 15px 15px 10px;
+      text-align: center;
+      &__text {
+        margin: 5px 0 0;
+        color: #000;
+        font-size: 15px;
+        line-height: 22px;
       }
     }
   }

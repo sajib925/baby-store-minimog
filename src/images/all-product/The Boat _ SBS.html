@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://www.sbs.com.au/theboat/ -->
+<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths cors devicemotion deviceorientation fullscreen vibrate desktop landscape windows windowsnt windowsnt_0 64bit chrome chrome110 chrome110_0 webkit en-gb webaudio js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths cors devicemotion deviceorientation fullscreen vibrate desktop landscape windows windowsnt windowsnt_0 64bit chrome chrome110 chrome110_0 webkit en-gb"><head class="at-element-marker"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script id="twitter-wjs" src="./The Boat _ SBS_files/widgets.js.download"></script><script type="text/javascript" async="async" src="./The Boat _ SBS_files/s75976013309662"></script><script src="./The Boat _ SBS_files/bl-e5e97ea-a31b0eb4.js.download" type="text/javascript" defer=""></script><script src="./The Boat _ SBS_files/b-8db6969-705b8f4a.js.download" type="text/javascript" defer=""></script><script type="text/javascript"></script><script src="./The Boat _ SBS_files/chartbeat_video.js.download"></script><script type="text/javascript" async="" src="./The Boat _ SBS_files/op.js.download"></script><script src="./The Boat _ SBS_files/1065402996832835" async=""></script><script async="" src="./The Boat _ SBS_files/fbevents.js.download"></script><script type="text/javascript" async="" src="./The Boat _ SBS_files/3ff05174bb5a024acef5c7961f8a19e0.js.download"></script><script type="text/javascript" async="" src="./The Boat _ SBS_files/8ea71762f65c60d47b6f2dc2e6ee9dd5.js.download"></script><script type="text/javascript" async="" src="./The Boat _ SBS_files/1c32237a5438dd7c377c0de6c87153c6.js.download"></script><script src="./The Boat _ SBS_files/serverComponent.php"></script>
+    
+    <title>The Boat | SBS</title>
+    <meta name="description" content="‘The Boat’, an interactive graphic novel about escape after the Vietnam War. Based on the story by Nam Le, adapted by Matt Huynh.">
+    <meta name="keywords" content="comic, graphic novel, boat, SBS, Vietnam, war, refugee, asylum seekers, Australia, WebGL, HTML5, interactive, storytelling, Nam Le, Matt Huynh">
+    <meta name="author" content="Nam Le, Matt Huynh, SBS">
+
+    <!-- width=device-width is required to trigger GPU rasterizr: https://www.chromium.org/developers/design-documents/chromium-graphics/how-to-get-gpu-rasterization -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <!-- facebook meta tags -->
+    <meta property="og:title" content="The Boat | SBS">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.sbs.com.au/theboat">
+    <meta property="og:image" content="http://www.sbs.com.au/theboat/images/fb-image.jpg">
+    <meta property="og:site_name" content="SBS">
+    <meta property="og:description" content="‘The Boat’, an interactive graphic novel about escape after the Vietnam War. Based on the story by Nam Le, adapted by Matt Huynh.​">
+
+    <link rel="shortcut icon" href="https://www.sbs.com.au/theboat/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="https://www.sbs.com.au/theboat/apple-touch-icon-precomposed.png">
+
+    <link rel="stylesheet" href="./The Boat _ SBS_files/vendor.css">
+    <link rel="stylesheet" href="./The Boat _ SBS_files/main.css">
+<style id="at-makers-style" class="at-flicker-control">
+.mboxDefault {visibility: hidden;}
+</style><style type="text/css">.dg {
+  /** Clear list styles */
+  /* Auto-place container */
+  /* Auto-placed GUI's */
+  /* Line items that don't contain folders. */
+  /** Folder names */
+  /** Hides closed items */
+  /** Controller row */
+  /** Name-half (left) */
+  /** Controller-half (right) */
+  /** Controller placement */
+  /** Shorter number boxes when slider is present. */
+  /** Ensure the entire boolean and function row shows a hand */ }
+  .dg ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    clear: both; }
+  .dg.ac {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    z-index: 0; }
+  .dg:not(.ac) .main {
+    /** Exclude mains in ac so that we don't hide close button */
+    overflow: hidden; }
+  .dg.main {
+    -webkit-transition: opacity 0.1s linear;
+    -o-transition: opacity 0.1s linear;
+    -moz-transition: opacity 0.1s linear;
+    transition: opacity 0.1s linear; }
+    .dg.main.taller-than-window {
+      overflow-y: auto; }
+      .dg.main.taller-than-window .close-button {
+        opacity: 1;
+        /* TODO, these are style notes */
+        margin-top: -1px;
+        border-top: 1px solid #2c2c2c; }
+    .dg.main ul.closed .close-button {
+      opacity: 1 !important; }
+    .dg.main:hover .close-button,
+    .dg.main .close-button.drag {
+      opacity: 1; }
+    .dg.main .close-button {
+      /*opacity: 0;*/
+      -webkit-transition: opacity 0.1s linear;
+      -o-transition: opacity 0.1s linear;
+      -moz-transition: opacity 0.1s linear;
+      transition: opacity 0.1s linear;
+      border: 0;
+      position: absolute;
+      line-height: 19px;
+      height: 20px;
+      /* TODO, these are style notes */
+      cursor: pointer;
+      text-align: center;
+      background-color: #000; }
+      .dg.main .close-button:hover {
+        background-color: #111; }
+  .dg.a {
+    float: right;
+    margin-right: 15px;
+    overflow-x: hidden; }
+    .dg.a.has-save > ul {
+      margin-top: 27px; }
+      .dg.a.has-save > ul.closed {
+        margin-top: 0; }
+    .dg.a .save-row {
+      position: fixed;
+      top: 0;
+      z-index: 1002; }
+  .dg li {
+    -webkit-transition: height 0.1s ease-out;
+    -o-transition: height 0.1s ease-out;
+    -moz-transition: height 0.1s ease-out;
+    transition: height 0.1s ease-out; }
+  .dg li:not(.folder) {
+    cursor: auto;
+    height: 27px;
+    line-height: 27px;
+    overflow: hidden;
+    padding: 0 4px 0 5px; }
+  .dg li.folder {
+    padding: 0;
+    border-left: 4px solid rgba(0, 0, 0, 0); }
+  .dg li.title {
+    cursor: pointer;
+    margin-left: -4px; }
+  .dg .closed li:not(.title),
+  .dg .closed ul li,
+  .dg .closed ul li > * {
+    height: 0;
+    overflow: hidden;
+    border: 0; }
+  .dg .cr {
+    clear: both;
+    padding-left: 3px;
+    height: 27px; }
+  .dg .property-name {
+    cursor: default;
+    float: left;
+    clear: left;
+    width: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .dg .c {
+    float: left;
+    width: 60%; }
+  .dg .c input[type=text] {
+    border: 0;
+    margin-top: 4px;
+    padding: 3px;
+    width: 100%;
+    float: right; }
+  .dg .has-slider input[type=text] {
+    width: 30%;
+    /*display: none;*/
+    margin-left: 0; }
+  .dg .slider {
+    float: left;
+    width: 66%;
+    margin-left: -5px;
+    margin-right: 0;
+    height: 19px;
+    margin-top: 4px; }
+  .dg .slider-fg {
+    height: 100%; }
+  .dg .c input[type=checkbox] {
+    margin-top: 9px; }
+  .dg .c select {
+    margin-top: 5px; }
+  .dg .cr.function,
+  .dg .cr.function .property-name,
+  .dg .cr.function *,
+  .dg .cr.boolean,
+  .dg .cr.boolean * {
+    cursor: pointer; }
+  .dg .selector {
+    display: none;
+    position: absolute;
+    margin-left: -9px;
+    margin-top: 23px;
+    z-index: 10; }
+  .dg .c:hover .selector,
+  .dg .selector.drag {
+    display: block; }
+  .dg li.save-row {
+    padding: 0; }
+    .dg li.save-row .button {
+      display: inline-block;
+      padding: 0px 6px; }
+  .dg.dialogue {
+    background-color: #222;
+    width: 460px;
+    padding: 15px;
+    font-size: 13px;
+    line-height: 15px; }
+
+/* TODO Separate style and structure */
+#dg-new-constructor {
+  padding: 10px;
+  color: #222;
+  font-family: Monaco, monospace;
+  font-size: 10px;
+  border: 0;
+  resize: none;
+  box-shadow: inset 1px 1px 1px #888;
+  word-wrap: break-word;
+  margin: 12px 0;
+  display: block;
+  width: 440px;
+  overflow-y: scroll;
+  height: 100px;
+  position: relative; }
+
+#dg-local-explain {
+  display: none;
+  font-size: 11px;
+  line-height: 17px;
+  border-radius: 3px;
+  background-color: #333;
+  padding: 8px;
+  margin-top: 10px; }
+  #dg-local-explain code {
+    font-size: 10px; }
+
+#dat-gui-save-locally {
+  display: none; }
+
+/** Main type */
+.dg {
+  color: #eee;
+  font: 11px 'Lucida Grande', sans-serif;
+  text-shadow: 0 -1px 0 #111;
+  /** Auto place */
+  /* Controller row, <li> */
+  /** Controllers */ }
+  .dg.main {
+    /** Scrollbar */ }
+    .dg.main::-webkit-scrollbar {
+      width: 5px;
+      background: #1a1a1a; }
+    .dg.main::-webkit-scrollbar-corner {
+      height: 0;
+      display: none; }
+    .dg.main::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: #676767; }
+  .dg li:not(.folder) {
+    background: #1a1a1a;
+    border-bottom: 1px solid #2c2c2c; }
+  .dg li.save-row {
+    line-height: 25px;
+    background: #dad5cb;
+    border: 0; }
+    .dg li.save-row select {
+      margin-left: 5px;
+      width: 108px; }
+    .dg li.save-row .button {
+      margin-left: 5px;
+      margin-top: 1px;
+      border-radius: 2px;
+      font-size: 9px;
+      line-height: 7px;
+      padding: 4px 4px 5px 4px;
+      background: #c5bdad;
+      color: #fff;
+      text-shadow: 0 1px 0 #b0a58f;
+      box-shadow: 0 -1px 0 #b0a58f;
+      cursor: pointer; }
+      .dg li.save-row .button.gears {
+        background: #c5bdad url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAANCAYAAAB/9ZQ7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQJJREFUeNpiYKAU/P//PwGIC/ApCABiBSAW+I8AClAcgKxQ4T9hoMAEUrxx2QSGN6+egDX+/vWT4e7N82AMYoPAx/evwWoYoSYbACX2s7KxCxzcsezDh3evFoDEBYTEEqycggWAzA9AuUSQQgeYPa9fPv6/YWm/Acx5IPb7ty/fw+QZblw67vDs8R0YHyQhgObx+yAJkBqmG5dPPDh1aPOGR/eugW0G4vlIoTIfyFcA+QekhhHJhPdQxbiAIguMBTQZrPD7108M6roWYDFQiIAAv6Aow/1bFwXgis+f2LUAynwoIaNcz8XNx3Dl7MEJUDGQpx9gtQ8YCueB+D26OECAAQDadt7e46D42QAAAABJRU5ErkJggg==) 2px 1px no-repeat;
+        height: 7px;
+        width: 8px; }
+      .dg li.save-row .button:hover {
+        background-color: #bab19e;
+        box-shadow: 0 -1px 0 #b0a58f; }
+  .dg li.folder {
+    border-bottom: 0; }
+  .dg li.title {
+    padding-left: 16px;
+    background: black url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlI+hKgFxoCgAOw==) 6px 10px no-repeat;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  .dg .closed li.title {
+    background-image: url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlGIWqMCbWAEAOw==); }
+  .dg .cr.boolean {
+    border-left: 3px solid #806787; }
+  .dg .cr.function {
+    border-left: 3px solid #e61d5f; }
+  .dg .cr.number {
+    border-left: 3px solid #2fa1d6; }
+    .dg .cr.number input[type=text] {
+      color: #2fa1d6; }
+  .dg .cr.string {
+    border-left: 3px solid #1ed36f; }
+    .dg .cr.string input[type=text] {
+      color: #1ed36f; }
+  .dg .cr.function:hover, .dg .cr.boolean:hover {
+    background: #111; }
+  .dg .c input[type=text] {
+    background: #303030;
+    outline: none; }
+    .dg .c input[type=text]:hover {
+      background: #3c3c3c; }
+    .dg .c input[type=text]:focus {
+      background: #494949;
+      color: #fff; }
+  .dg .c .slider {
+    background: #303030;
+    cursor: ew-resize; }
+  .dg .c .slider-fg {
+    background: #2fa1d6; }
+  .dg .c .slider:hover {
+    background: #3c3c3c; }
+    .dg .c .slider:hover .slider-fg {
+      background: #44abda; }
+</style><script charset="utf-8" src="./The Boat _ SBS_files/button.e7f9415a2e000feaab02c86dd5802747.js.download"></script></head>
+
+<body data-new-gr-c-s-check-loaded="14.1098.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+
+
+<div id="app-container" style="display: block; width: 100%; height: 0px;"><div style="width: 1920px; height: 880px;"><canvas width="1920" height="880" style="position: fixed; top: 0px; width: 1920px; height: 880px;"></canvas><div style="overflow: hidden; transform-style: preserve-3d; position: fixed; top: 0px; pointer-events: none; width: 1920px; height: 880px; perspective: 943.583px;"><div style="transform-style: preserve-3d; width: 1920px; height: 880px; transform: translate3d(0px, 0px, 943.583px) matrix3d(1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, -1200, 1) translate3d(960px, 440px, 0px);"><div style="width: 1038px; height: 990px; will-change: transform; position: absolute; transform: translate3d(-50%, -50%, 0px) matrix3d(0.999665, 0, 0.0258637, 0, 0, -1, 0, 0, -0.0258637, 0, 0.999665, 0, 0, -2200, 0, 1);"><div><div class="display-text medium light"><p>The crosswind surged in, filtering through the apertures in the rotten wood, sounding like a chorus of low moans.</p><p>Hugging a beam at the top of the hatch, Mai looked out and her breath stopped. The boat had heeled so steeply that all she saw was an enormous wall of black-green water bearing down.</p><p>She shut her eyes, opened them again — now the gunwale had crested the water, the ocean completely vanished.</p></div></div></div><div style="width: 1038px; height: 450px; will-change: transform; position: absolute; transform: translate3d(-50%, -50%, 0px) matrix3d(0.999665, 0, 0.0258637, 0, 0, -1, 0, 0, -0.0258637, 0, 0.999665, 0, 0, -3400, 0, 1);"><div><p class="display-text small" style=""><div style="display: block; position: relative; transform: translate3d(0px, 0px, 0.1px);">A body collided into hers, slammed her against the side of the hatch door.</div></p></div></div><div style="width: 1038px; height: 450px; will-change: transform; position: absolute; transform: translate3d(-50%, -50%, 0px) matrix3d(0.999665, 0, 0.0258637, 0, 0, -1, 0, 0, -0.0258637, 0, 0.999665, 0, 0, -4200, 0, 1);"><div><p class="display-text small" style=""><div style="display: block; position: relative; transform: translate3d(0px, 0px, 0.1px);">Other bodies — she was on top of them — thighs and ribs and arms and heads — jammed this way and that with each groaning tilt, </div></p></div></div></div></div><div id="scroll-manager-outer-container"><div id="scroll-manager-container"><div id="scroll-manager-fake-content" tabindex="-1" style="height: 175208px;"></div></div></div></div></div>
+<div id="chapter-nav-container"><div id="chapter-nav">
+    <ul>
+        <li><a class="chapter" data-chapter-name="chapter1" href="https://www.sbs.com.au/theboat/chapter-1">1</a></li>
+        <li><a class="chapter" data-chapter-name="chapter2" href="https://www.sbs.com.au/theboat/chapter-2">2</a></li>
+        <li><a class="chapter" data-chapter-name="chapter3" href="https://www.sbs.com.au/theboat/chapter-3">3</a></li>
+        <li><a class="chapter" data-chapter-name="chapter4" href="https://www.sbs.com.au/theboat/chapter-4">4</a></li>
+        <li><a class="chapter" data-chapter-name="chapter5" href="https://www.sbs.com.au/theboat/chapter-5">5</a></li>
+        <li><a class="chapter" data-chapter-name="chapter6" href="https://www.sbs.com.au/theboat/chapter-6">6</a></li>
+    </ul>
+</div>
+</div>
+<div id="preloader-container" style="display: none;"></div>
+<div id="footer-container"><div class="settings">
+    <input type="checkbox" id="sound" class="checkbox"><label id="sound-label" for="sound">Sound</label>
+    <input type="checkbox" id="auto-scroll" class="checkbox"><label for="auto-scroll">Auto Scroll</label>
+    <input type="checkbox" id="full-screen" class="checkbox"><label id="full-screen-label" for="full-screen">Full Screen</label>
+</div>
+<div class="logo">
+    <a href="http://www.sbs.com.au/" target="_blank"><img src="./The Boat _ SBS_files/logo-sbs.svg" width="76" height="61"></a>
+</div>
+</div>
+<div id="social-container" style="display: block;"><!-- Twitter -->
+<div class="twitter">
+    <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 73px; height: 20px;" title="Twitter Tweet Button" src="./The Boat _ SBS_files/tweet_button.2b2d73daf636805223fb11d48f3e94f7.en.html" data-url="http://www.sbs.com.au/theboat"></iframe>
+</div>
+<!-- Facebook  -->
+<div class="facebook">
+    <iframe src="./The Boat _ SBS_files/like.html" scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 150px; height: 21px;" allowtransparency="true"></iframe>
+</div>
+</div>
+
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    #preload-container {
+        height: calc(100% - 50px);
+    }
+    #footer-container {
+        bottom: 50px;
+    }
+    #sbs-footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 13px 24px;
+        gap: 16px;
+        background-color: #1b2024;
+        color: #9ba4ac;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        line-height: 24px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    #sbs-footer a {
+        color: #f1f2f3;
+        text-decoration: none;
+    }
+    #sbs-footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+<div id="sbs-footer">
+    <div><a href="https://sbs.com.au/terms">Terms &amp; Conditions</a></div>
+    <div><a href="https://sbs.com.au/privacy">Privacy</a></div>
+    <div style="flex-grow: 1"><a href="https://sbs.com.au/complaints">Complaints</a></div>
+    <div>SBS acknowledges the Traditional Owners of Country throughout Australia</div>
+</div>
+
+<script src="./The Boat _ SBS_files/modernizr.js.download"></script>
+<script src="./The Boat _ SBS_files/detectizr.js.download"></script>
+<script src="./The Boat _ SBS_files/flightcheck.js.download"></script>
+
+<script src="./The Boat _ SBS_files/main.js.download"></script>
+
+<script type="text/javascript" src="./The Boat _ SBS_files/Bootstrap.js.download"></script>
+
+<audio preload="true" style="display: none;"><source type="audio/mpeg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/mp3/204844.mp3"><source type="audio/ogg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/ogg/204844.ogg"></audio><audio preload="true" style="display: none;"><source type="audio/mpeg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/mp3/204849.mp3"><source type="audio/ogg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/ogg/204849.ogg"></audio><audio preload="true" style="display: none;"><source type="audio/mpeg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/mp3/204918.mp3"><source type="audio/ogg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/ogg/204918.ogg"></audio><audio preload="true" style="display: none;"><source type="audio/mpeg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/mp3/204959.mp3"><source type="audio/ogg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/ogg/204959.ogg"></audio><audio preload="true" style="display: none;"><source type="audio/mpeg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/mp3/205008.mp3"><source type="audio/ogg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/ogg/205008.ogg"></audio><audio preload="true" style="display: none;"><source type="audio/mpeg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/mp3/205021.mp3"><source type="audio/ogg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/ogg/205021.ogg"></audio><audio preload="true" style="display: none;"><source type="audio/mpeg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/mp3/205026.mp3"><source type="audio/ogg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/ogg/205026.ogg"></audio><audio preload="true" style="display: none;"><source type="audio/mpeg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/mp3/205033.mp3"><source type="audio/ogg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/ogg/205033.ogg"></audio><audio preload="true" style="display: none;"><source type="audio/mpeg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/mp3/205044.mp3"><source type="audio/ogg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/ogg/205044.ogg"></audio><audio preload="true" style="display: none;"><source type="audio/mpeg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/mp3/205053.mp3"><source type="audio/ogg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/ogg/205053.ogg"></audio><audio preload="true" style="display: none;"><source type="audio/mpeg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/mp3/205102.mp3"><source type="audio/ogg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/ogg/205102.ogg"></audio><audio preload="true" style="display: none;"><source type="audio/mpeg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/mp3/205106.mp3"><source type="audio/ogg" src="chrome-extension://ncodfadkoblpfngolndehmjpjepepdao/sounds/ogg/205106.ogg"></audio><iframe sandbox="allow-scripts allow-same-origin" title="Adobe ID Syncing iFrame" id="destination_publishing_iframe_sbs_0" name="destination_publishing_iframe_sbs_0_name" src="./The Boat _ SBS_files/dest5.html" class="aamIframeLoaded" style="display: none; width: 0px; height: 0px;"></iframe><audio preload="auto" src="audio/sfx/thunder-3-norm.ogg" style=""></audio><audio preload="auto" src="audio/music/the-boat-petty-opening-tempest-ext-storm.ogg" style="" loop=""></audio><audio preload="auto" src="audio/sfx/thunder-4-norm.ogg" style=""></audio><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./The Boat _ SBS_files/widget_iframe.2b2d73daf636805223fb11d48f3e94f7.html" title="Twitter settings iframe" style="display: none;"></iframe><audio preload="auto" src="audio/sfx/opening-element-thunder-5-norm-01.ogg" style=""></audio><audio preload="auto" src="audio/sfx/opening-element-thunder-1-norm-01-01.ogg" style=""></audio><audio preload="auto" src="audio/sfx/opening-element-thunder-2-norm-01-01.ogg" style=""></audio><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./The Boat _ SBS_files/saved_resource.html"></iframe></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

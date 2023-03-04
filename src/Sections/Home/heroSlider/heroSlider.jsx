@@ -1,50 +1,79 @@
-import React from 'react';
-import { Autoplay,Pagination, Navigation, EffectFade } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import img1 from '../../../../public/image/heroSlider/h_baby_slide_01.jpg';
-import img2 from '../../../../public/image/heroSlider/h_baby_slide_02.jpg';
-import img3 from '../../../../public/image/heroSlider/h_baby_slide_03.jpg'
-import { StyledSlider } from './style';
-import { Wrapper } from '../../../components/wrapper/wrapper';
+import React from "react";
+import {Autoplay, Pagination, Navigation, EffectFade} from "swiper";
+import {Swiper, SwiperSlide} from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import {StyledSlider} from "./style";
+import {Wrapper} from "../../../components/wrapper/wrapper";
+import HeroText from "./../heroText/HeroText";
 
 export const HeroSlider = () => {
-    return (
-        <StyledSlider>
-            <Swiper
-                effect={'fade'}
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction:false
-                }}
-                modules={[ EffectFade, Autoplay,Pagination, Navigation]}
-                spaceBetween={50}
-                slidesPerView={1}
-                navigation
-                pagination={{ clickable: true }}
-                scrollbar={{ draggable: true }}
-    
-            >
-                <SwiperSlide>
-                    {/* <div className="image1"></div> */}
-                    <img src={img1} alt="" />
-                    <Wrapper>
-                        <h1 className='h1'>hello world</h1>
-                    </Wrapper>
-                </SwiperSlide>
-                <SwiperSlide>
-                    {/* <div className="image2"></div> */}
-                    <img src={img2} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    {/* <div className="image3"></div> */}
-                    <img src={img3} alt="" />
-                </SwiperSlide>
-            </Swiper>
-        </StyledSlider>
-        
+  return (
+    <StyledSlider>
+      <Swiper
+        effect={"fade"}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[EffectFade, Autoplay, Pagination, Navigation]}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{clickable: true}}
+        scrollbar={{draggable: true}}
+      >
+        <SwiperSlide>
+          <div className="image1">
+            <Wrapper>
+              <div className="hero__text">
+                <div className="animate__animated animate__bounceInDown">
+                  <HeroText
+                    title="Welcome to Tiny World"
+                    descrition="Trusted and loved by parents."
+                    btnLink="#"
+                    btn="Shop Now"
+                  />
+                </div>
+              </div>
+            </Wrapper>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="image2">
+            <Wrapper>
+              <div className="hero__text">
+                <div className="animate__animated animate__bounceInDown">
+                  <HeroText
+                    title="Giggle Baby Stores"
+                    descrition="Openwork knit sweater fall."
+                    btnLink="#"
+                    btn="Shop Now"
+                  />
+                </div>
+              </div>
+            </Wrapper>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="image3">
+            <Wrapper>
+              <div className="hero__text">
+                <div className="animate__animated animate__bounceInDown">
+                  <HeroText
+                    title="All your Baby needs"
+                    descrition="Our baby stuffs are cute, affordable."
+                    btnLink="#"
+                    btn="Shop Now"
+                  />
+                </div>
+              </div>
+            </Wrapper>
+          </div>
+        </SwiperSlide>
+      </Swiper>
+    </StyledSlider>
   );
 };

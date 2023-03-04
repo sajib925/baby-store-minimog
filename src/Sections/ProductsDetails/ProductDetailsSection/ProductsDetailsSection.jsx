@@ -10,6 +10,7 @@ import {RiQuestionLine} from "react-icons/ri"
 import {AiOutlineShareAlt} from "react-icons/ai"
 import {FaShippingFast} from "react-icons/fa"
 import {TiShoppingBag} from "react-icons/ti"
+import img from "../../../images/all-product/product-trust-badge.webp"
 
 const ProductsDetailsSection = () => {
   return (
@@ -91,26 +92,30 @@ const ProductsDetailsSection = () => {
               <div className="meta__shipping">
                 <div className="meta__shipping__delivery">
                   <div className="icon">
-                    <FaShippingFast />
+                    <FaShippingFast size={20} />
                   </div>
-                  <div className="label">
-                    Estimated Delivery :
-                  </div>
-                  <div className="value">
-                    16 - 23 Feb, 2023
-                  </div>
+                  <div className="label">Estimated Delivery :</div>
+                  <div className="value">16 - 23 Feb, 2023</div>
                 </div>
                 <div className="meta__shipping__return">
                   <div className="icon">
-                    <TiShoppingBag />
+                    <TiShoppingBag size={20} />
                   </div>
-                  <div className="label">
-                    Free Shipping & Returns :
-                  </div>
-                  <div className="value">
-                    On all orders over $200.00
-                  </div>
+                  <div className="label">Free Shipping & Returns :</div>
+                  <div className="value">On all orders over $200.00</div>
                 </div>
+              </div>
+              <div className="product__trust__badge">
+                <div className="product__trust__badge__thumbnail">
+                  <img
+                    src={img}
+                    alt="payment card"
+                    className="product__trust__badge__img"
+                  />
+                </div>
+                <p className="product__trust__badge__text">
+                  Guaranteed safe & secure checkout
+                </p>
               </div>
             </div>
           </div>

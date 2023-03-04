@@ -21,10 +21,6 @@ const ProductsDetailsSlider = () => {
   return (
     <StyledProductsDetailsSlider>
       <Swiper
-        style={{
-          "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
-        }}
         spaceBetween={10}
         navigation={true}
         thumbs={{swiper: thumbsSwiper}}
@@ -32,10 +28,16 @@ const ProductsDetailsSlider = () => {
         className="mySwiper2"
       >
         <SwiperSlide>
-          <img src={img2} />
+          <img
+            src={img2}
+            style={{width: "100%", height: "100%", objectFit: "cover"}}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img2} />
+          <img
+            src={img2}
+            style={{width: "100%", height: "100%", objectFit: "cover"}}
+          />
         </SwiperSlide>
       </Swiper>
       <Swiper
@@ -48,10 +50,16 @@ const ProductsDetailsSlider = () => {
         className="mySwiper"
       >
         <SwiperSlide className="swiper__slide">
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+          <img
+            src="https://swiperjs.com/demos/images/nature-9.jpg"
+            style={{width: "68px", height: "90px"}}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+          <img
+            src="https://swiperjs.com/demos/images/nature-10.jpg"
+            style={{width: "68px", height: "90px"}}
+          />
         </SwiperSlide>
       </Swiper>
     </StyledProductsDetailsSlider>
