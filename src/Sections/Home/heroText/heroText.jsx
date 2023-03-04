@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import { StyledHeroText } from "./styles";
+import { StyledHeroText } from "./styledHeroText";
 
 const HeroText = ({title, descrition, btnLink, btn}) => {
   return (
