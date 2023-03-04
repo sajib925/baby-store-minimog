@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import {StyledSlider} from "./style";
 import {Wrapper} from "../../../components/wrapper/wrapper";
-import HeroText from "./../heroText/HeroText";
+import HeroText from "../heroText/HeroText";
 
 export const HeroSlider = () => {
   return (
