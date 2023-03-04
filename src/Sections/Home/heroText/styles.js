@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { media } from './../../../styles/responsive';
+import {media} from "../../../styles/responsive";
 
 export const StyledHeroText = styled.div`
   max-width: 370px;
