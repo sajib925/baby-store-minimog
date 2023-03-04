@@ -33,7 +33,7 @@ export const HeroSlider = () => {
                   <HeroText
                     title="Welcome to Tiny World"
                     descrition="Trusted and loved by parents."
-                    btnLink="#"
+                    btnLink="/"
                     btn="Shop Now"
                   />
                 </div>
@@ -49,7 +49,7 @@ export const HeroSlider = () => {
                   <HeroText
                     title="Giggle Baby Stores"
                     descrition="Openwork knit sweater fall."
-                    btnLink="#"
+                    btnLink="/"
                     btn="Shop Now"
                   />
                 </div>
@@ -65,7 +65,7 @@ export const HeroSlider = () => {
                   <HeroText
                     title="All your Baby needs"
                     descrition="Our baby stuffs are cute, affordable."
-                    btnLink="#"
+                    btnLink="/"
                     btn="Shop Now"
                   />
                 </div>
