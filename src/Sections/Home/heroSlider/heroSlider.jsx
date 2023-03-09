@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import {StyledSlider} from "./style";
 import {Wrapper} from "../../../components/wrapper/wrapper";
+import { Link } from "react-router-dom";
 // import HeroText from "../HeroText/HeroText";
 
 export const HeroSlider = () => {
@@ -36,6 +37,13 @@ export const HeroSlider = () => {
                     btnLink="/"
                     btn="Shop Now"
                   /> */}
+                  <h1 className="title">Welcome to Tiny World</h1>
+                  <p className="description">Trusted and loved by parents.</p>
+                  <div className="btn">
+                    <Link to="#" className="btn__link">
+                      Shop Now
+                    </Link>
+                  </div>
                 </div>
               </div>
             </Wrapper>
@@ -52,6 +60,13 @@ export const HeroSlider = () => {
                     btnLink="/"
                     btn="Shop Now"
                   /> */}
+                  <h1 className="title">Welcome to Tiny World</h1>
+                  <p className="description">Trusted and loved by parents.</p>
+                  <div className="btn">
+                    <Link to="#" className="btn__link">
+                      Shop Now
+                    </Link>
+                  </div>
                 </div>
               </div>
             </Wrapper>
@@ -68,6 +83,13 @@ export const HeroSlider = () => {
                     btnLink="/"
                     btn="Shop Now"
                   /> */}
+                  <h1 className="title">Welcome to Tiny World</h1>
+                  <p className="description">Trusted and loved by parents.</p>
+                  <div className="btn">
+                    <Link to="#" className="btn__link">
+                      Shop Now
+                    </Link>
+                  </div>
                 </div>
               </div>
             </Wrapper>
