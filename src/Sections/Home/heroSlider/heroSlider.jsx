@@ -1,14 +1,15 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import {Wrapper} from "../../../components/wrapper/wrapper";
+import {StyledSlider} from "./style";
+
+// swiper
 import {Autoplay, Pagination, Navigation, EffectFade} from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import {StyledSlider} from "./style";
-import {Wrapper} from "../../../components/wrapper/wrapper";
-import { Link } from "react-router-dom";
-// import HeroText from "../HeroText/HeroText";
 
 export const HeroSlider = () => {
   return (
@@ -31,12 +32,6 @@ export const HeroSlider = () => {
             <Wrapper>
               <div className="hero__text">
                 <div className="">
-                  {/* <HeroText
-                    title="Welcome to Tiny World"
-                    descrition="Trusted and loved by parents."
-                    btnLink="/"
-                    btn="Shop Now"
-                  /> */}
                   <h1 className="title">Welcome to Tiny World</h1>
                   <p className="description">Trusted and loved by parents.</p>
                   <div className="btn">
@@ -54,14 +49,8 @@ export const HeroSlider = () => {
             <Wrapper>
               <div className="hero__text">
                 <div className="">
-                  {/* <HeroText
-                    title="Giggle Baby Stores"
-                    descrition="Openwork knit sweater fall."
-                    btnLink="/"
-                    btn="Shop Now"
-                  /> */}
-                  <h1 className="title">Welcome to Tiny World</h1>
-                  <p className="description">Trusted and loved by parents.</p>
+                  <h1 className="title">Giggle Baby Stores</h1>
+                  <p className="description">Openwork knit sweater fall.</p>
                   <div className="btn">
                     <Link to="#" className="btn__link">
                       Shop Now
@@ -77,14 +66,10 @@ export const HeroSlider = () => {
             <Wrapper>
               <div className="hero__text">
                 <div className="">
-                  {/* <HeroText
-                    title="All your Baby needs"
-                    descrition="Our baby stuffs are cute, affordable."
-                    btnLink="/"
-                    btn="Shop Now"
-                  /> */}
-                  <h1 className="title">Welcome to Tiny World</h1>
-                  <p className="description">Trusted and loved by parents.</p>
+                  <h1 className="title">All your Baby needs</h1>
+                  <p className="description">
+                    Our baby stuffs are cute, affordable.
+                  </p>
                   <div className="btn">
                     <Link to="#" className="btn__link">
                       Shop Now
