@@ -29,7 +29,7 @@ export const HeroSlider = () => {
           <div className="image1">
             <Wrapper>
               <div className="hero__text">
-                <div className="animate__animated animate__bounceInDown">
+                <div className="">
                   <HeroText
                     title="Welcome to Tiny World"
                     descrition="Trusted and loved by parents."
@@ -45,7 +45,7 @@ export const HeroSlider = () => {
           <div className="image2">
             <Wrapper>
               <div className="hero__text">
-                <div className="animate__animated animate__bounceInDown">
+                <div className="">
                   <HeroText
                     title="Giggle Baby Stores"
                     descrition="Openwork knit sweater fall."
@@ -61,7 +61,7 @@ export const HeroSlider = () => {
           <div className="image3">
             <Wrapper>
               <div className="hero__text">
-                <div className="animate__animated animate__bounceInDown">
+                <div className="">
                   <HeroText
                     title="All your Baby needs"
                     descrition="Our baby stuffs are cute, affordable."
